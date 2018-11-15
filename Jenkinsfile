@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'mvn clean package'
-        error 'file 17'
+        sh 'file 17'
       }
     }
     stage('Test') {
